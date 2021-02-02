@@ -34,6 +34,12 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 #spacingBox {
   background-color: white;
   margin-top: 160px;
