@@ -1,0 +1,137 @@
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: linear-gradient(180deg, rgba(175, 104, 234, 1) 0%, rgba(123, 100, 232, 1) 100%);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#spacingBox {
+    background-color: white;
+    margin-top: 160px;
+    margin-bottom: 100px;
+    width: 300px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 20px;
+
+    @media screen and(min-width: $mediaChangeWidth) {
+        width: 60vw;
+        flex-direction: row;
+    }
+}
+
+#flexSpacingBox {
+    height: 100px;
+
+    @media screen and(min-width: $mediaChangeWidth) {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+#faqContainerSpacing {
+    flex-grow: 1;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+
+    > div {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        > div {
+            flex-basis: 35px;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            flex-direction: column;
+
+            > div {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        > h1 {
+            text-align: center;
+
+            @media screen and(min-width: $mediaChangeWidth) {
+                text-align: left;
+            }
+        }
+    }
+}
+
+#ilustration {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: url("/images/illustration-woman-online-mobile.svg"), url("/images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0px center, center 150px;
+
+    @media screen and (min-width: $mediaChangeWidth) {
+        position: absolute;
+        left: 0px;
+        width: 50%;
+        height: 100%;
+        background-image: url("/images/illustration-box-desktop.svg"),
+            url("/images/illustration-woman-online-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: 14vw 40vh, 14vw 30vh;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    max-width: 400px;
+}
+
+.spanClicked {
+    font-weight: 700;
+}
+
+.imgClicked {
+    transform: rotate(180deg);
+}
+
+.greyFont {
+    color: #606062;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    height: 30px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
