@@ -74,6 +74,10 @@ body {
             > div {
                 display: flex;
                 justify-content: space-between;
+
+                &:hover {
+                    color: #d99379;
+                }
             }
         }
 

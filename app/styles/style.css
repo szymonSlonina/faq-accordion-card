@@ -123,6 +123,10 @@ body {
           justify-content: space-between;
 }
 
+#faqContainerSpacing > div > div > div:hover {
+  color: #d99379;
+}
+
 #faqContainerSpacing > div > h1 {
   text-align: center;
 }
